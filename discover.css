@@ -1,0 +1,54 @@
+.new_music {
+    color: white;
+}
+
+.music_types {
+    display: flex;
+    padding: 35px 10px;
+}
+
+.music_types > div {
+    width: 100px;
+    height: 100px;
+    background-color: #202027aa;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    row-gap: 10px;
+    box-shadow: 1px 1px 5px #202027;
+    border-radius: 5px;
+}
+
+.music_types > div img {
+    width: 35px;
+    height: 35px;
+}
+
+.music_types > div p,
+.short_note {
+    font-size: larger;
+}
+
+.album_image {
+    margin-left: 2rem;
+}
+.album_image img {
+    width: 30vw;
+    max-width: 350px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .main {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .album_image img {
+        max-width: auto;
+        width: 50vw;
+    }
+}

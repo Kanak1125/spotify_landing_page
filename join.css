@@ -1,0 +1,54 @@
+.main {
+    column-gap: 5rem;
+}
+.main div:first-child {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color: white;
+}
+
+span {
+    color: #BC3A80;
+}
+
+.form {
+    width: 450px;
+    padding: 50px;
+    background-color: #202027aa;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 10px;
+}
+form > input {
+    background-color: #202027aa;
+    outline: none !important;
+    border: 2px solid rgb(52, 87, 178, .1);
+    border-radius: 5px;
+    height: 35px;
+    width: auto;
+    color: white;
+    padding: 7px;
+}
+
+form > input:focus {
+    border: 2px solid rgb(52, 87, 178, .3); 
+}
+
+form button {
+    height: 35px;
+}
+
+@media screen and (max-width: 800px) {
+    .main {
+        flex-direction: column;
+        justify-content: center;
+    }
+}

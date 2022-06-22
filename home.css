@@ -1,0 +1,83 @@
+.home_main {
+    display: flex;
+    height: 100%;
+}
+.image_wrapper {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.img_container {
+    flex-grow: 1;
+    background-image: url('images/landing-page-girl.png');
+    width: 40vw;
+    height: 100%;
+    max-width: 40vw;
+    max-height: 70vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+.about {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    line-height: 5rem;
+}
+
+.about p {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.join_btn {
+    width: 110px;
+    height: 45px;
+}
+
+.circle_big_blue {
+    position: absolute;
+    width: 45vw;
+    height: 45vw;
+    overflow: hidden;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.circle_big_blue::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgb(52, 87, 178, .1);
+    transform: translate(40%, 40%);
+}
+
+@media only screen and (max-width: 800px) {
+    .image_wrapper {
+        display: none;
+    }
+    .about h2 {
+        font-size: 2.5rem;
+    }
+    .about p {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}
+
+/* @media only screen and (max-width: 480px) {
+    ul.link {
+        position: fixed;
+        right: -50px;
+        top: 80px;
+        transform: rotate(90deg);
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        padding: 10px;
+        border-radius: 5px;
+    }
+} */
